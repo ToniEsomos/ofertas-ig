@@ -9,7 +9,7 @@ on:
         description: "Qué hacer"
         type: choice
         default: preparar-y-publicar
-        options: [preparar-y-publicar, inicializar, solo-historias]
+        options: [preparar-y-publicar, inicializar, solo-historias, anuncio]
 
 permissions:
   contents: write
@@ -38,11 +38,11 @@ jobs:
           git add -A && (git diff --cached --quiet || git commit -m "Inicializar") && git push
 
       - name: Preparar creatividades
-        if: github.event.inputs.accion != 'inicializar' && github.event.inputs.accion != 'solo-historias'
+        if: github.event.inputs.accion != 'inicializar' && github.event.inputs.accion != 'solo-historias' && github.event.inputs.accion != 'anuncio'
         run: python main.py preparar
 
       - name: Subir imágenes al repositorio
-        if: github.event.inputs.accion != 'inicializar' && github.event.inputs.accion != 'solo-historias'
+        if: github.event.inputs.accion != 'inicializar' && github.event.inputs.accion != 'solo-historias' && github.event.inputs.accion != 'anuncio'
         run: |
           git add -A
           git diff --cached --quiet || git commit -m "Ofertas $(date +%F)"
@@ -50,7 +50,7 @@ jobs:
           sleep 20
 
       - name: Publicar en Instagram
-        if: github.event.inputs.accion != 'inicializar' && github.event.inputs.accion != 'solo-historias'
+        if: github.event.inputs.accion != 'inicializar' && github.event.inputs.accion != 'solo-historias' && github.event.inputs.accion != 'anuncio'
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
@@ -63,8 +63,15 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: python main.py historias
 
+      - name: Publicar anuncio (imagen única)
+        if: github.event.inputs.accion == 'anuncio'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python main.py anuncio
+
       - name: Guardar estado
-        if: always() && github.event.inputs.accion != 'inicializar' && github.event.inputs.accion != 'solo-historias'
+        if: always() && github.event.inputs.accion != 'inicializar' && github.event.inputs.accion != 'solo-historias' && github.event.inputs.accion != 'anuncio'
         run: |
           git add -A
           git diff --cached --quiet || git commit -m "Estado $(date +%F)"

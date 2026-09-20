@@ -213,9 +213,36 @@ def cmd_historias():
     print(f"Historias publicadas: {len(ids)}")
 
 
+def cmd_anuncio():
+    """Publica la imagen de anuncio (promo/anuncio_seguidores.jpg) como post del feed."""
+    img = RAIZ / "promo" / "anuncio_seguidores.jpg"
+    if not img.exists():
+        print("No existe promo/anuncio_seguidores.jpg")
+        return
+    texto = (
+        "🩺 ¿Buscas trabajo en sanidad en Madrid?\n\n"
+        "Cada día publicamos las nuevas ofertas de empleo sanitario en hospitales y clínicas de Madrid: "
+        "enfermería, TCAE, medicina, fisioterapia y más.\n\n"
+        "👉 Síguenos para no perderte ninguna oferta.\n"
+        "✍️ Inscríbete en el portal oficial: empleo.quironsalud.es\n\n"
+        + " ".join(config.HASHTAGS[:30])
+    )
+    if not (os.environ.get("IG_USER_ID") and os.environ.get("IG_ACCESS_TOKEN")):
+        print("MODO PRUEBA: sin credenciales. No se publica el anuncio.\n")
+        print(texto)
+        return
+    from instagram import publicar_imagen
+
+    repo = os.environ["GITHUB_REPOSITORY"]
+    sha = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=RAIZ, text=True).strip()
+    url = f"https://raw.githubusercontent.com/{repo}/{sha}/promo/anuncio_seguidores.jpg"
+    id_post = publicar_imagen(url, texto)
+    print(f"Anuncio publicado en Instagram: {id_post}")
+
+
 if __name__ == "__main__":
     comandos = {"inicializar": cmd_inicializar, "preparar": cmd_preparar,
-                "publicar": cmd_publicar, "historias": cmd_historias}
+                "publicar": cmd_publicar, "historias": cmd_historias, "anuncio": cmd_anuncio}
     if len(sys.argv) != 2 or sys.argv[1] not in comandos:
         print(__doc__)
         sys.exit(1)

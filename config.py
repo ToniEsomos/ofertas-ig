@@ -4,7 +4,7 @@ CONFIGURACIÓN — edita solo este archivo para personalizar la cuenta.
 
 # ---------- Marca de TU cuenta (no uses el logo ni el nombre de Quirónsalud como marca) ----------
 NOMBRE_CUENTA = "Empleo Sanidad Madrid"     # Nombre que aparece en las creatividades
-USUARIO_IG = "@ofertasempleosanidadmad"     # Tu @ de Instagram
+USUARIO_IG = "@ofertasempleosanidadmadrid"  # Tu @ de Instagram
 HASHTAGS = [
     # Alto volumen (alcance)
     "#empleo", "#trabajo", "#ofertasdeempleo", "#ofertadeempleo", "#buscotrabajo",

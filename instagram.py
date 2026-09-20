@@ -77,6 +77,26 @@ def publicar_carrusel(urls_imagenes: list[str], texto: str) -> str:
     return publicado["id"]
 
 
+def publicar_imagen(url_imagen: str, texto: str) -> str:
+    """Publica UNA imagen (URL pública JPEG) como publicación de feed. Devuelve el ID."""
+    base, user_id, token = _cfg()
+    cont = _post(f"{base}/{user_id}/media",
+                 {"image_url": url_imagen, "caption": texto, "access_token": token})["id"]
+    _esperar_contenedor(base, token, cont)
+    ultimo = None
+    for _ in range(8):
+        try:
+            return _post(f"{base}/{user_id}/media_publish",
+                         {"creation_id": cont, "access_token": token})["id"]
+        except ErrorInstagram as e:
+            ultimo = e
+            if "2207027" in str(e) or "9007" in str(e) or "not ready" in str(e).lower():
+                time.sleep(8)
+                continue
+            raise
+    raise ultimo
+
+
 def publicar_historia(url_imagen: str) -> str:
     """Publica UNA imagen (URL pública JPEG) como Historia. Devuelve el ID.
 
