@@ -253,15 +253,18 @@ def ficha_oferta(o: dict, indice: int, total: int, ruta: Path) -> Path:
         d.text((px + 60, y + 2), texto, font=fd, fill=config.COLOR_TEXTO_TARJETA)
         y += 78
 
-    # Llamada a la acción
-    fb = _fuente("ExtraBold", 36)
-    cta = "Inscríbete → enlace en la bio"
-    w = d.textlength(cta, font=fb)
-    d.rounded_rectangle((80, 1180, 80 + w + 70, 1260), radius=40, fill=config.COLOR_ACENTO)
-    d.text((115, 1199), cta, font=fb, fill=config.COLOR_TEXTO)
+    # Referencia dentro de la tarjeta (abajo a la derecha)
     fr = _fuente("SemiBold", 28)
     ref = f"Ref. {o['id']}"
-    d.text((ANCHO - 80 - d.textlength(ref, font=fr), 1205), ref, font=fr, fill=(200, 208, 230))
+    d.text((x1 - 60 - d.textlength(ref, font=fr), y1 - 55), ref, font=fr, fill=config.COLOR_SECUNDARIO)
+
+    # Llamada a la acción: portal oficial, centrada
+    fb = _fuente("ExtraBold", 34)
+    cta = "Inscríbete en empleo.quironsalud.es"
+    w = d.textlength(cta, font=fb)
+    x = (ANCHO - w - 70) / 2
+    d.rounded_rectangle((x, 1180, x + w + 70, 1260), radius=40, fill=config.COLOR_ACENTO)
+    d.text((x + 35, 1201), cta, font=fb, fill=config.COLOR_TEXTO)
 
     img.convert("RGB").save(ruta, "JPEG", quality=92)
     return ruta

@@ -42,12 +42,12 @@ def _lugar(o):
 
 
 def texto_publicacion(ofertas, dia: date) -> str:
-    cab = f"🩺 Ofertas de empleo sanitario · {dia.strftime('%d/%m/%Y')}\n\n"
+    cab = f"🩺 Ofertas de empleo sanitario en Madrid · {dia.strftime('%d/%m/%Y')}\n\n"
     empresas = ", ".join(sorted({o["empresa"] for o in ofertas}))
     pie = (
-        f"👉 Enlace para inscribirte en todas las ofertas: link en la bio ({config.USUARIO_IG})\n\n"
-        f"Ofertas publicadas en el portal de empleo de {empresas}. Cuenta informativa no oficial: "
-        "la inscripción se hace siempre en la web oficial de la empresa.\n\n"
+        "✍️ Inscríbete gratis en el portal oficial: empleo.quironsalud.es "
+        "(busca la oferta por su nº de referencia)\n\n"
+        f"Fuente: portal de empleo de {empresas}.\n\n"
         + " ".join(config.HASHTAGS[:30])
     )
     cuerpo = ""
