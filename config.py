@@ -30,7 +30,7 @@ MAX_OFERTAS_POR_DIA = 9           # Carrusel: portada + hasta 9 ofertas (máx. 1
 MIN_OFERTAS_PARA_PUBLICAR = 1     # Si hay menos ofertas nuevas, no se publica ese día
 
 # Filtrar por provincia/localidad (vacío = toda España). Ej: ["Madrid"]
-FILTRO_ZONAS: list[str] = []
+FILTRO_ZONAS: list[str] = ["Madrid"]
 
 # Días que se guardan las imágenes generadas en el repositorio
 DIAS_CONSERVAR_IMAGENES = 7

@@ -113,7 +113,7 @@ def limpiar_imagenes_antiguas():
 
 
 def cmd_inicializar():
-    ofertas = obtener_ofertas()
+    ofertas = filtrar_por_zona(obtener_ofertas())
     vistas = _leer(VISTAS, {})
     ahora = datetime.now().isoformat(timespec="seconds")
     for o in ofertas:
@@ -126,14 +126,14 @@ def cmd_inicializar():
 
 def cmd_preparar():
     hoy = date.today()
-    ofertas = obtener_ofertas()
-    print(f"Ofertas activas en el portal: {len(ofertas)}")
+    ofertas = filtrar_por_zona(obtener_ofertas())
+    print(f"Ofertas activas en el portal (tras filtro de zona): {len(ofertas)}")
     _guardar(ACTUALES, ofertas)
     generar_web(ofertas)
     limpiar_imagenes_antiguas()
 
     vistas = _leer(VISTAS, {})
-    nuevas = [o for o in filtrar_por_zona(ofertas) if o["id"] not in vistas]
+    nuevas = [o for o in ofertas if o["id"] not in vistas]
     print(f"Ofertas sin publicar: {len(nuevas)}")
     if len(nuevas) < config.MIN_OFERTAS_PARA_PUBLICAR:
         PENDIENTE.unlink(missing_ok=True)
@@ -142,7 +142,9 @@ def cmd_preparar():
     lote = nuevas[: config.MAX_OFERTAS_POR_DIA]
     carpeta = SALIDA / hoy.isoformat()
     if carpeta.exists():
-        shutil.rmtree(carpeta)
+        # Vaciar en vez de borrar la carpeta: OneDrive puede bloquear el rmdir
+        for f in carpeta.glob("*"):
+            f.unlink()
     rutas = generar_carrusel(lote, hoy, carpeta)
     _guardar(PENDIENTE, {
         "fecha": hoy.isoformat(),
