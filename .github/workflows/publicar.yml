@@ -1,0 +1,64 @@
+name: Publicar ofertas
+
+on:
+  schedule:
+    - cron: "0 7 * * *"   # 09:00 en Madrid en horario de verano (08:00 en invierno)
+  workflow_dispatch:
+    inputs:
+      accion:
+        description: "Qué hacer"
+        type: choice
+        default: preparar-y-publicar
+        options: [preparar-y-publicar, inicializar]
+
+permissions:
+  contents: write
+
+concurrency: publicar-ofertas
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+
+      - name: Configurar git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Inicializar (marca las ofertas actuales como vistas)
+        if: github.event.inputs.accion == 'inicializar'
+        run: |
+          python main.py inicializar
+          git add -A && (git diff --cached --quiet || git commit -m "Inicializar") && git push
+
+      - name: Preparar creatividades
+        if: github.event.inputs.accion != 'inicializar'
+        run: python main.py preparar
+
+      - name: Subir imágenes al repositorio
+        if: github.event.inputs.accion != 'inicializar'
+        run: |
+          git add -A
+          git diff --cached --quiet || git commit -m "Ofertas $(date +%F)"
+          git push
+          sleep 20
+
+      - name: Publicar en Instagram
+        if: github.event.inputs.accion != 'inicializar'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python main.py publicar
+
+      - name: Guardar estado
+        if: always() && github.event.inputs.accion != 'inicializar'
+        run: |
+          git add -A
+          git diff --cached --quiet || git commit -m "Estado $(date +%F)"
+          git push
