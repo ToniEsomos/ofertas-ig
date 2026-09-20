@@ -91,10 +91,10 @@ input{{width:100%;box-sizing:border-box;padding:14px;border-radius:12px;border:1
 .cat,.nueva{{font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;background:#ffe3df;color:#c73b2b;margin-right:6px}}
 .nueva{{background:#0f1b3d;color:#fff}}footer{{font-size:12px;color:#889;text-align:center;padding:20px}}
 </style></head><body>
-<header><h1>{html.escape(config.NOMBRE_CUENTA)}</h1><p>{len(ofertas)} ofertas activas · actualizado {hoy.strftime('%d/%m/%Y')}</p></header>
+<header><h1>{html.escape(config.NOMBRE_CUENTA)}</h1><p>{len(ofertas)} ofertas · actualizado {hoy.strftime('%d/%m/%Y')} · pulsa una oferta para inscribirte</p></header>
 <main><input id="q" placeholder="Busca por puesto, ciudad o nº de referencia…" oninput="f()">
 {''.join(filas)}
-</main><footer>Página informativa no oficial. Pulsa una oferta para inscribirte en la web oficial.</footer>
+</main><footer>Al pulsar una oferta accedes directamente a su página oficial de inscripción de Quirónsalud.</footer>
 <script>function f(){{const q=document.getElementById('q').value.toLowerCase();
 document.querySelectorAll('.o').forEach(a=>a.style.display=a.dataset.t.includes(q)?'':'none')}}</script>
 </body></html>"""
