@@ -87,8 +87,19 @@ def publicar_historia(url_imagen: str) -> str:
     cont = _post(f"{base}/{user_id}/media",
                  {"image_url": url_imagen, "media_type": "STORIES", "access_token": token})["id"]
     _esperar_contenedor(base, token, cont)
-    return _post(f"{base}/{user_id}/media_publish",
-                 {"creation_id": cont, "access_token": token})["id"]
+    # A veces el contenedor da FINISHED pero aún no está listo para publicar (código 9007).
+    ultimo = None
+    for _ in range(8):
+        try:
+            return _post(f"{base}/{user_id}/media_publish",
+                         {"creation_id": cont, "access_token": token})["id"]
+        except ErrorInstagram as e:
+            ultimo = e
+            if "2207027" in str(e) or "9007" in str(e) or "not ready" in str(e).lower():
+                time.sleep(8)
+                continue
+            raise
+    raise ultimo
 
 
 def publicar_historias(urls_imagenes: list[str]) -> list[str]:

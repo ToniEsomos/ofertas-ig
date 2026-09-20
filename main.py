@@ -188,8 +188,29 @@ def cmd_publicar():
     PENDIENTE.unlink()
 
 
+def cmd_historias():
+    """Publica como Historias las imágenes del último carrusel generado en output/."""
+    carpetas = sorted((c for c in SALIDA.glob("*") if c.is_dir()), reverse=True)
+    imgs = sorted(carpetas[0].glob("*.jpg")) if carpetas else []
+    if not imgs:
+        print("No hay imágenes en output/ para publicar como historias.")
+        return
+    if not (os.environ.get("IG_USER_ID") and os.environ.get("IG_ACCESS_TOKEN")):
+        print("MODO PRUEBA: sin credenciales de Instagram. No se publican historias.")
+        return
+    from instagram import publicar_historias
+
+    repo = os.environ["GITHUB_REPOSITORY"]
+    sha = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=RAIZ, text=True).strip()
+    urls = [f"https://raw.githubusercontent.com/{repo}/{sha}/{str(p.relative_to(RAIZ)).replace(os.sep, '/')}"
+            for p in imgs]
+    ids = publicar_historias(urls)
+    print(f"Historias publicadas: {len(ids)}")
+
+
 if __name__ == "__main__":
-    comandos = {"inicializar": cmd_inicializar, "preparar": cmd_preparar, "publicar": cmd_publicar}
+    comandos = {"inicializar": cmd_inicializar, "preparar": cmd_preparar,
+                "publicar": cmd_publicar, "historias": cmd_historias}
     if len(sys.argv) != 2 or sys.argv[1] not in comandos:
         print(__doc__)
         sys.exit(1)
