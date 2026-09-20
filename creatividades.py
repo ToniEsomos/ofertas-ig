@@ -276,3 +276,148 @@ def generar_carrusel(ofertas: list[dict], dia: date, carpeta: Path) -> list[Path
     for i, o in enumerate(ofertas, start=1):
         rutas.append(ficha_oferta(o, i, len(ofertas), carpeta / f"{i:02d}_{o['id']}.jpg"))
     return rutas
+
+
+# ============ HISTORIAS (1080x1920, formato 9:16 vertical, optimizado para móvil) ============
+ALTO_H = 1920
+# Zonas seguras: Instagram superpone su interfaz arriba (~230 px: foto y usuario) y
+# abajo (~250 px: barra de respuesta). Todo el contenido clave va entre esas franjas.
+
+
+def _decoracion_h(img):
+    capa = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(capa)
+    r, g, b = config.COLOR_ACENTO
+    W, H = img.size
+    d.ellipse((W - 360, -320, W + 280, 380), fill=(r, g, b, 60))
+    d.ellipse((-260, H - 380, 240, H + 220), fill=(255, 255, 255, 16))
+    img.alpha_composite(capa)
+
+
+def _cabecera_h(d, derecha: str = ""):
+    d.text((80, 250), config.NOMBRE_CUENTA.upper(), font=_fuente("Bold", 34), fill=config.COLOR_TEXTO)
+    d.rectangle((80, 306, 158, 313), fill=config.COLOR_ACENTO)
+    if derecha:
+        fd = _fuente("SemiBold", 32)
+        d.text((ANCHO - 80 - d.textlength(derecha, font=fd), 252), derecha, font=fd, fill=config.COLOR_TEXTO)
+
+
+def _cta_bio_h(d, principal: str):
+    """Banda inferior común: botón del portal oficial + aviso del enlace de la bio."""
+    fb = _fuente("ExtraBold", 42)
+    while d.textlength(principal, font=fb) > ANCHO - 150 and fb.size > 28:
+        fb = _fuente("ExtraBold", fb.size - 2)
+    w = d.textlength(principal, font=fb)
+    x = (ANCHO - w - 80) / 2
+    d.rounded_rectangle((x, 1540, x + w + 80, 1636), radius=48, fill=config.COLOR_ACENTO)
+    d.text((x + 40, 1562), principal, font=fb, fill=config.COLOR_TEXTO)
+    aviso = "Enlace directo en la bio"
+    fa = _fuente("SemiBold", 34)
+    d.text(((ANCHO - d.textlength(aviso, font=fa)) / 2, 1676), aviso, font=fa, fill=(205, 212, 232))
+    fu = _fuente("Medium", 30)
+    d.text(((ANCHO - d.textlength(config.USUARIO_IG, font=fu)) / 2, 1800),
+           config.USUARIO_IG, font=fu, fill=(150, 162, 190))
+
+
+def portada_historia(ofertas: list[dict], dia: date, ruta: Path) -> Path:
+    img = Image.new("RGBA", (ANCHO, ALTO_H), config.COLOR_FONDO + (255,))
+    _decoracion_h(img)
+    d = ImageDraw.Draw(img)
+    _cabecera_h(d)
+
+    d.text((80, 470), "OFERTAS", font=_fuente("ExtraBold", 132), fill=config.COLOR_TEXTO)
+    d.text((80, 616), "DE EMPLEO", font=_fuente("ExtraBold", 132), fill=config.COLOR_TEXTO)
+    d.text((80, 762), "SANITARIO", font=_fuente("ExtraBold", 132), fill=config.COLOR_ACENTO)
+    n = len(ofertas)
+    sub = f"{fecha_larga(dia).capitalize()}  ·  {n} oferta{'s' if n != 1 else ''} en Madrid"
+    fs = _fuente("SemiBold", 42)
+    while d.textlength(sub, font=fs) > ANCHO - 168 and fs.size > 30:
+        fs = _fuente("SemiBold", fs.size - 2)
+    d.text((84, 946), sub, font=fs, fill=(200, 208, 230))
+
+    # Resumen de categorías
+    conteo: dict[str, int] = {}
+    for o in ofertas:
+        conteo[categoria(o["titulo"])] = conteo.get(categoria(o["titulo"]), 0) + 1
+    y, x = 1090, 80
+    fp = _fuente("Bold", 32)
+    for nombre, cnt in sorted(conteo.items(), key=lambda kv: -kv[1]):
+        etiqueta = f"{nombre}  {cnt}"
+        w = d.textlength(etiqueta, font=fp) + 54
+        if x + w > ANCHO - 80:
+            x, y = 80, y + 86
+        d.rounded_rectangle((x, y, x + w, y + 66), radius=33, outline=config.COLOR_TEXTO, width=3)
+        d.text((x + 27, y + 15), etiqueta, font=fp, fill=config.COLOR_TEXTO)
+        x += w + 16
+
+    _cta_bio_h(d, "empleo.quironsalud.es")
+    img.convert("RGB").save(ruta, "JPEG", quality=92)
+    return ruta
+
+
+def ficha_historia(o: dict, indice: int, total: int, ruta: Path) -> Path:
+    img = Image.new("RGBA", (ANCHO, ALTO_H), config.COLOR_FONDO + (255,))
+    _decoracion_h(img)
+    d = ImageDraw.Draw(img)
+    _cabecera_h(d, f"{indice}/{total}")
+
+    cat = categoria(o["titulo"])
+    fc = _fuente("Bold", 32)
+    w = d.textlength(cat, font=fc)
+    d.rounded_rectangle((80, 384, 80 + w + 60, 452), radius=34, fill=config.COLOR_ACENTO)
+    d.text((110, 399), cat, font=fc, fill=config.COLOR_TEXTO)
+
+    x0, y0, x1, y1 = 60, 496, ANCHO - 60, 1470
+    d.rounded_rectangle((x0, y0, x1, y1), radius=44, fill=config.COLOR_TARJETA)
+    px = x0 + 60
+    ancho_util = (x1 - 60) - px
+
+    d.text((px, y0 + 56), "SE BUSCA", font=_fuente("Bold", 32), fill=config.COLOR_ACENTO)
+    puesto, detalle = separar_titulo(o["titulo"])
+    f, lineas, inter = _ajustar_titulo(d, puesto, ancho_util, alto_max=380 if detalle else 520)
+    y = y0 + 120
+    for linea in lineas:
+        d.text((px, y), linea, font=f, fill=config.COLOR_TEXTO_TARJETA)
+        y += inter
+    if detalle:
+        fdet = _fuente("SemiBold", 38)
+        y += 14
+        for linea in _envolver(d, detalle, fdet, ancho_util)[:3]:
+            d.text((px, y), linea, font=fdet, fill=config.COLOR_SECUNDARIO)
+            y += 50
+
+    y = max(y + 40, y1 - 350)
+    d.line((px, y, x1 - 60, y), fill=(225, 229, 238), width=3)
+    y += 44
+    fdd = _fuente("SemiBold", 38)
+    lugar = o["localidad"]
+    if o["provincia"] and o["provincia"].lower() not in lugar.lower():
+        lugar = f"{lugar}, {o['provincia']}" if lugar else o["provincia"]
+    try:
+        publicada = datetime.fromisoformat(o["fecha"]).strftime("%d/%m/%Y")
+    except ValueError:
+        publicada = "—"
+    for icono, texto in [(_icono_ubicacion, lugar or "Ver oferta"),
+                         (_icono_empresa, o["empresa"]),
+                         (_icono_calendario, f"Publicada el {publicada}")]:
+        icono(d, px, y, config.COLOR_ACENTO)
+        texto = _envolver(d, texto, fdd, ancho_util - 70)[0]
+        d.text((px + 60, y + 2), texto, font=fdd, fill=config.COLOR_TEXTO_TARJETA)
+        y += 82
+
+    fr = _fuente("SemiBold", 30)
+    ref = f"Ref. {o['id']}"
+    d.text((x1 - 60 - d.textlength(ref, font=fr), y1 - 58), ref, font=fr, fill=config.COLOR_SECUNDARIO)
+
+    _cta_bio_h(d, "Inscríbete en empleo.quironsalud.es")
+    img.convert("RGB").save(ruta, "JPEG", quality=92)
+    return ruta
+
+
+def generar_historias(ofertas: list[dict], dia: date, carpeta: Path) -> list[Path]:
+    """Genera las imágenes verticales (9:16) para publicar como Historias."""
+    carpeta.mkdir(parents=True, exist_ok=True)
+    rutas = [portada_historia(ofertas, dia, carpeta / "h00_portada.jpg")]
+    for i, o in enumerate(ofertas, start=1):
+        rutas.append(ficha_historia(o, i, len(ofertas), carpeta / f"h{i:02d}_{o['id']}.jpg"))
+    return rutas

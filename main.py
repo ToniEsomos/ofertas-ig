@@ -14,7 +14,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 
 import config
-from creatividades import categoria, generar_carrusel
+from creatividades import categoria, generar_carrusel, generar_historias
 from scraper import filtrar_por_zona, obtener_ofertas
 
 RAIZ = Path(__file__).parent
@@ -146,13 +146,15 @@ def cmd_preparar():
         for f in carpeta.glob("*"):
             f.unlink()
     rutas = generar_carrusel(lote, hoy, carpeta)
+    rutas_h = generar_historias(lote, hoy, carpeta)
     _guardar(PENDIENTE, {
         "fecha": hoy.isoformat(),
         "ofertas": lote,
         "imagenes": [str(r.relative_to(RAIZ)).replace("\\", "/") for r in rutas],
+        "imagenes_historia": [str(r.relative_to(RAIZ)).replace("\\", "/") for r in rutas_h],
         "texto": texto_publicacion(lote, hoy),
     })
-    print(f"Preparado carrusel con {len(lote)} ofertas en {carpeta}")
+    print(f"Preparado carrusel ({len(rutas)} img) e historias ({len(rutas_h)} img) en {carpeta}")
 
 
 def cmd_publicar():
@@ -173,9 +175,12 @@ def cmd_publicar():
     id_post = publicar_carrusel(urls, pendiente["texto"])
     print(f"Publicado en Instagram: {id_post}")
 
-    # También subimos todo el carrusel a Historias (sin sticker de enlace: la API no lo permite).
+    # También subimos las versiones verticales (9:16) a Historias.
+    # (Sin sticker de enlace: la API de Instagram no lo permite.)
     try:
-        ids_hist = publicar_historias(urls)
+        imgs_h = pendiente.get("imagenes_historia") or pendiente["imagenes"]
+        urls_h = [f"https://raw.githubusercontent.com/{repo}/{sha}/{p}" for p in imgs_h]
+        ids_hist = publicar_historias(urls_h)
         print(f"Historias publicadas: {len(ids_hist)}")
     except Exception as e:
         print(f"Aviso: no se pudieron publicar las historias ({e}). El feed sí se publicó.")
@@ -191,9 +196,9 @@ def cmd_publicar():
 def cmd_historias():
     """Publica como Historias las imágenes del último carrusel generado en output/."""
     carpetas = sorted((c for c in SALIDA.glob("*") if c.is_dir()), reverse=True)
-    imgs = sorted(carpetas[0].glob("*.jpg")) if carpetas else []
+    imgs = sorted(carpetas[0].glob("h*.jpg")) if carpetas else []  # h* = imágenes de historia (9:16)
     if not imgs:
-        print("No hay imágenes en output/ para publicar como historias.")
+        print("No hay imágenes de historia (h*.jpg) en output/ para publicar.")
         return
     if not (os.environ.get("IG_USER_ID") and os.environ.get("IG_ACCESS_TOKEN")):
         print("MODO PRUEBA: sin credenciales de Instagram. No se publican historias.")
