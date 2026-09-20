@@ -165,13 +165,20 @@ def cmd_publicar():
         print(pendiente["texto"])
         return
 
-    from instagram import publicar_carrusel
+    from instagram import publicar_carrusel, publicar_historias
 
     repo = os.environ["GITHUB_REPOSITORY"]  # lo pone GitHub Actions: usuario/repositorio
     sha = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=RAIZ, text=True).strip()
     urls = [f"https://raw.githubusercontent.com/{repo}/{sha}/{p}" for p in pendiente["imagenes"]]
     id_post = publicar_carrusel(urls, pendiente["texto"])
     print(f"Publicado en Instagram: {id_post}")
+
+    # También subimos todo el carrusel a Historias (sin sticker de enlace: la API no lo permite).
+    try:
+        ids_hist = publicar_historias(urls)
+        print(f"Historias publicadas: {len(ids_hist)}")
+    except Exception as e:
+        print(f"Aviso: no se pudieron publicar las historias ({e}). El feed sí se publicó.")
 
     vistas = _leer(VISTAS, {})
     ahora = datetime.now().isoformat(timespec="seconds")

@@ -77,6 +77,28 @@ def publicar_carrusel(urls_imagenes: list[str], texto: str) -> str:
     return publicado["id"]
 
 
+def publicar_historia(url_imagen: str) -> str:
+    """Publica UNA imagen (URL pública JPEG) como Historia. Devuelve el ID.
+
+    Nota: la API de Instagram NO permite añadir stickers de enlace ni otros
+    elementos interactivos a las historias; solo la imagen.
+    """
+    base, user_id, token = _cfg()
+    cont = _post(f"{base}/{user_id}/media",
+                 {"image_url": url_imagen, "media_type": "STORIES", "access_token": token})["id"]
+    _esperar_contenedor(base, token, cont)
+    return _post(f"{base}/{user_id}/media_publish",
+                 {"creation_id": cont, "access_token": token})["id"]
+
+
+def publicar_historias(urls_imagenes: list[str]) -> list[str]:
+    """Publica varias imágenes como historias, cada una en su propio frame."""
+    ids = []
+    for url in urls_imagenes:
+        ids.append(publicar_historia(url))
+    return ids
+
+
 def renovar_token(token_actual: str) -> dict:
     """Renueva un token de larga duración (debe tener >24 h y no estar caducado)."""
     r = requests.get("https://graph.instagram.com/refresh_access_token",
