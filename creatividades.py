@@ -131,7 +131,7 @@ def _cabecera(draw, derecha: str = ""):
 
 def _pie(draw):
     f = _fuente("Medium", 26)
-    texto = f"{config.USUARIO_IG}  ·  Cuenta no oficial"
+    texto = config.USUARIO_IG
     w = draw.textlength(texto, font=f)
     draw.text(((ANCHO - w) / 2, ALTO - 70), texto, font=f, fill=(190, 198, 220))
 
@@ -255,7 +255,7 @@ def ficha_oferta(o: dict, indice: int, total: int, ruta: Path) -> Path:
 
     # Llamada a la acción
     fb = _fuente("ExtraBold", 36)
-    cta = "Inscríbete: enlace en la bio"
+    cta = "Inscríbete → enlace en la bio"
     w = d.textlength(cta, font=fb)
     d.rounded_rectangle((80, 1180, 80 + w + 70, 1260), radius=40, fill=config.COLOR_ACENTO)
     d.text((115, 1199), cta, font=fb, fill=config.COLOR_TEXTO)
