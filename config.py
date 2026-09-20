@@ -6,8 +6,16 @@ CONFIGURACIÓN — edita solo este archivo para personalizar la cuenta.
 NOMBRE_CUENTA = "Empleo Sanitario"          # Nombre que aparece en las creatividades
 USUARIO_IG = "@empleo.sanitario"            # Tu @ de Instagram
 HASHTAGS = [
-    "#empleo", "#trabajo", "#ofertasdeempleo", "#sanidad", "#enfermeria",
-    "#tcae", "#medicina", "#empleosanitario", "#buscotrabajo", "#trabajoenespaña",
+    # Alto volumen (alcance)
+    "#empleo", "#trabajo", "#ofertasdeempleo", "#ofertadeempleo", "#buscotrabajo",
+    "#buscoempleo", "#bolsadeempleo", "#trabajoenespaña", "#madrid",
+    # Madrid (audiencia local)
+    "#empleomadrid", "#trabajomadrid", "#trabajoenmadrid", "#madridempleo",
+    # Nicho sanitario (seguidores cualificados)
+    "#sanidad", "#empleosanitario", "#enfermeria", "#enfermera", "#enfermero",
+    "#tcae", "#auxiliardeenfermeria", "#medicina", "#medico", "#fisioterapia",
+    "#farmacia", "#oposicionessanidad", "#hospital", "#salud", "#celador",
+    "#quirofano", "#urgencias",
 ]
 
 # ---------- Colores (RGB) ----------
