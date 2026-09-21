@@ -2,7 +2,9 @@ name: Publicar ofertas
 
 on:
   schedule:
-    - cron: "0 7 * * *"   # 09:00 en Madrid en horario de verano (08:00 en invierno)
+    # Minuto "raro" y fuera de la hora en punto: GitHub retrasa mucho menos las tareas
+    # que no se programan a las XX:00. ~08:23 Madrid en verano (07:23 en invierno).
+    - cron: "23 6 * * *"
   workflow_dispatch:
     inputs:
       accion:
