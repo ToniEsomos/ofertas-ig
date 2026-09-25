@@ -175,10 +175,11 @@ def cmd_publicar():
     id_post = publicar_carrusel(urls, pendiente["texto"])
     print(f"Publicado en Instagram: {id_post}")
 
-    # También subimos las versiones verticales (9:16) a Historias.
+    # Subimos SOLO la portada como Historia (1 al día), para mantener un volumen
+    # de actividad natural y no disparar el antiautomatización de Meta.
     # (Sin sticker de enlace: la API de Instagram no lo permite.)
     try:
-        imgs_h = pendiente.get("imagenes_historia") or pendiente["imagenes"]
+        imgs_h = (pendiente.get("imagenes_historia") or pendiente["imagenes"])[:1]
         urls_h = [f"https://raw.githubusercontent.com/{repo}/{sha}/{p}" for p in imgs_h]
         ids_hist = publicar_historias(urls_h)
         print(f"Historias publicadas: {len(ids_hist)}")
