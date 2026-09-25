@@ -1,6 +1,69 @@
 {
-  "fecha": "2026-09-24",
+  "fecha": "2026-09-25",
   "ofertas": [
+    {
+      "id": "128926956",
+      "titulo": "Facultativo/a especialista en neurologia fundacion jimenez diaz",
+      "empresa": "Quirónsalud",
+      "localidad": "Madrid",
+      "provincia": "Madrid",
+      "fecha": "2026-09-25",
+      "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128926956/4590"
+    },
+    {
+      "id": "128925769",
+      "titulo": "Auxiliar de Enfermería Consultas Externas (turno de mañana + 1 dia turno partido) - Hospital Universitario Quirónsalud Pozuelo",
+      "empresa": "Quirónsalud",
+      "localidad": "Madrid",
+      "provincia": "Madrid",
+      "fecha": "2026-09-25",
+      "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128925769/4590"
+    },
+    {
+      "id": "128772251",
+      "titulo": "Facultativo/a Especialista en Medicina Interna",
+      "empresa": "Quirónsalud",
+      "localidad": "Madrid",
+      "provincia": "Madrid",
+      "fecha": "2026-09-25",
+      "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128772251/4590"
+    },
+    {
+      "id": "128922020",
+      "titulo": "Responsable de Cafetería - Hospitales Quirónsalud - Madrid",
+      "empresa": "Quirónsalud",
+      "localidad": "Madrid",
+      "provincia": "Madrid",
+      "fecha": "2026-09-25",
+      "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128922020/4590"
+    },
+    {
+      "id": "128920553",
+      "titulo": "Facultativo/a especialista en microbiología - H.U. Infanta Sofía (S.S. de los Reyes) Madrid",
+      "empresa": "Quirónsalud",
+      "localidad": "Madrid",
+      "provincia": "Madrid",
+      "fecha": "2026-09-25",
+      "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128920553/4590"
+    },
+    {
+      "id": "128903195",
+      "titulo": "Auxiliar de Enfermería Unidad Del Sueño (turno de noche) - Hospital Universitario Ruber Juan Bravo",
+      "empresa": "Quirónsalud",
+      "localidad": "Madrid",
+      "provincia": "Madrid",
+      "fecha": "2026-09-24",
+      "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128903195/4590"
+    },
+    {
+      "id": "128899384",
+      "titulo": "Fisioterapeuta (turno de tarde) - Hospital Quirónsalud Sur",
+      "empresa": "Quirónsalud",
+      "localidad": "Madrid",
+      "provincia": "Madrid",
+      "fecha": "2026-09-24",
+      "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128899384/4590"
+    },
     {
       "id": "128895064",
       "titulo": "Consultor/a de Estrategia y Operaciones (Corporativo)",
@@ -18,94 +81,31 @@
       "provincia": "Madrid",
       "fecha": "2026-09-23",
       "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128873253/4590"
-    },
-    {
-      "id": "128872781",
-      "titulo": "Técnico/a Especialista Radiodiagnóstico Ecografías - Hospital Universitario Quirónsalud Pozuelo",
-      "empresa": "Quirónsalud",
-      "localidad": "Pozuelo de Alarcón",
-      "provincia": "Madrid",
-      "fecha": "2026-09-23",
-      "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128872781/4590"
-    },
-    {
-      "id": "128868417",
-      "titulo": "Study Coordinator Neumología- Hospital Universitario Quirónsalud Pozuelo",
-      "empresa": "Quirónsalud",
-      "localidad": "Pozuelo de Alarcón",
-      "provincia": "Madrid",
-      "fecha": "2026-09-23",
-      "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128868417/4590"
-    },
-    {
-      "id": "128501417",
-      "titulo": "Aux. Administrativo/a Consultas Externas - Hospital Ruber Internacional - Madrid",
-      "empresa": "Quirónsalud",
-      "localidad": "Madrid",
-      "provincia": "Madrid",
-      "fecha": "2026-09-23",
-      "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128501417/4590"
-    },
-    {
-      "id": "128832679",
-      "titulo": "Enfermero/a Hospitalización - Hospital Universitario Quirónsalud La Luz",
-      "empresa": "Quirónsalud",
-      "localidad": "Madrid",
-      "provincia": "Madrid",
-      "fecha": "2026-09-22",
-      "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128832679/4590"
-    },
-    {
-      "id": "126550477",
-      "titulo": "Responsable de Limpieza - Hospital Universitario Infanta Elena (Valdemoro)",
-      "empresa": "Quirónsalud",
-      "localidad": "Valdemoro",
-      "provincia": "Madrid",
-      "fecha": "2026-09-22",
-      "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/126550477/4590"
-    },
-    {
-      "id": "128771759",
-      "titulo": "Facultativo/a especialista en Medicina de Familia y Comunitaria",
-      "empresa": "Quirónsalud",
-      "localidad": "Madrid",
-      "provincia": "Madrid",
-      "fecha": "2026-09-22",
-      "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128771759/4590"
-    },
-    {
-      "id": "128791230",
-      "titulo": "Técnico/a Generalista de RRHH (foco en Administración de Personal)",
-      "empresa": "Quirónsalud",
-      "localidad": "Madrid",
-      "provincia": "Madrid",
-      "fecha": "2026-09-21",
-      "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128791230/4590"
     }
   ],
   "imagenes": [
-    "output/2026-09-24/00_portada.jpg",
-    "output/2026-09-24/01_128895064.jpg",
-    "output/2026-09-24/02_128873253.jpg",
-    "output/2026-09-24/03_128872781.jpg",
-    "output/2026-09-24/04_128868417.jpg",
-    "output/2026-09-24/05_128501417.jpg",
-    "output/2026-09-24/06_128832679.jpg",
-    "output/2026-09-24/07_126550477.jpg",
-    "output/2026-09-24/08_128771759.jpg",
-    "output/2026-09-24/09_128791230.jpg"
+    "output/2026-09-25/00_portada.jpg",
+    "output/2026-09-25/01_128926956.jpg",
+    "output/2026-09-25/02_128925769.jpg",
+    "output/2026-09-25/03_128772251.jpg",
+    "output/2026-09-25/04_128922020.jpg",
+    "output/2026-09-25/05_128920553.jpg",
+    "output/2026-09-25/06_128903195.jpg",
+    "output/2026-09-25/07_128899384.jpg",
+    "output/2026-09-25/08_128895064.jpg",
+    "output/2026-09-25/09_128873253.jpg"
   ],
   "imagenes_historia": [
-    "output/2026-09-24/h00_portada.jpg",
-    "output/2026-09-24/h01_128895064.jpg",
-    "output/2026-09-24/h02_128873253.jpg",
-    "output/2026-09-24/h03_128872781.jpg",
-    "output/2026-09-24/h04_128868417.jpg",
-    "output/2026-09-24/h05_128501417.jpg",
-    "output/2026-09-24/h06_128832679.jpg",
-    "output/2026-09-24/h07_126550477.jpg",
-    "output/2026-09-24/h08_128771759.jpg",
-    "output/2026-09-24/h09_128791230.jpg"
+    "output/2026-09-25/h00_portada.jpg",
+    "output/2026-09-25/h01_128926956.jpg",
+    "output/2026-09-25/h02_128925769.jpg",
+    "output/2026-09-25/h03_128772251.jpg",
+    "output/2026-09-25/h04_128922020.jpg",
+    "output/2026-09-25/h05_128920553.jpg",
+    "output/2026-09-25/h06_128903195.jpg",
+    "output/2026-09-25/h07_128899384.jpg",
+    "output/2026-09-25/h08_128895064.jpg",
+    "output/2026-09-25/h09_128873253.jpg"
   ],
-  "texto": "🩺 Ofertas de empleo sanitario en Madrid · 24/09/2026\n\n▪️ Consultor/a de Estrategia y Operaciones (Corporativo)\n📍 Madrid · Ref. 128895064\n\n▪️ Celador/a Quirófano - Centro Médico Quirúrgico Olympia\n📍 Madrid · Ref. 128873253\n\n▪️ Técnico/a Especialista Radiodiagnóstico Ecografías - Hospital Universitario Quirónsalud Pozuelo\n📍 Pozuelo de Alarcón, Madrid · Ref. 128872781\n\n▪️ Study Coordinator Neumología- Hospital Universitario Quirónsalud Pozuelo\n📍 Pozuelo de Alarcón, Madrid · Ref. 128868417\n\n▪️ Aux. Administrativo/a Consultas Externas - Hospital Ruber Internacional - Madrid\n📍 Madrid · Ref. 128501417\n\n▪️ Enfermero/a Hospitalización - Hospital Universitario Quirónsalud La Luz\n📍 Madrid · Ref. 128832679\n\n▪️ Responsable de Limpieza - Hospital Universitario Infanta Elena (Valdemoro)\n📍 Valdemoro, Madrid · Ref. 126550477\n\n▪️ Facultativo/a especialista en Medicina de Familia y Comunitaria\n📍 Madrid · Ref. 128771759\n\n▪️ Técnico/a Generalista de RRHH (foco en Administración de Personal)\n📍 Madrid · Ref. 128791230\n\n✍️ Inscríbete gratis en el portal oficial: empleo.quironsalud.es (busca la oferta por su nº de referencia)\n\nFuente: portal de empleo de Quirónsalud, Torre Caleido.\n\n#empleo #trabajo #ofertasdeempleo #ofertadeempleo #buscotrabajo #buscoempleo #bolsadeempleo #trabajoenespaña #madrid #empleomadrid #trabajomadrid #trabajoenmadrid #madridempleo #sanidad #empleosanitario #enfermeria #enfermera #enfermero #tcae #auxiliardeenfermeria #medicina #medico #fisioterapia #farmacia #oposicionessanidad #hospital #salud #celador #quirofano #urgencias"
+  "texto": "🩺 Ofertas de empleo sanitario en Madrid · 25/09/2026\n\n▪️ Facultativo/a especialista en neurologia fundacion jimenez diaz\n📍 Madrid · Ref. 128926956\n\n▪️ Auxiliar de Enfermería Consultas Externas (turno de mañana + 1 dia turno partido) - Hospital Universitario Quirónsalud Pozuelo\n📍 Madrid · Ref. 128925769\n\n▪️ Facultativo/a Especialista en Medicina Interna\n📍 Madrid · Ref. 128772251\n\n▪️ Responsable de Cafetería - Hospitales Quirónsalud - Madrid\n📍 Madrid · Ref. 128922020\n\n▪️ Facultativo/a especialista en microbiología - H.U. Infanta Sofía (S.S. de los Reyes) Madrid\n📍 Madrid · Ref. 128920553\n\n▪️ Auxiliar de Enfermería Unidad Del Sueño (turno de noche) - Hospital Universitario Ruber Juan Bravo\n📍 Madrid · Ref. 128903195\n\n▪️ Fisioterapeuta (turno de tarde) - Hospital Quirónsalud Sur\n📍 Madrid · Ref. 128899384\n\n▪️ Consultor/a de Estrategia y Operaciones (Corporativo)\n📍 Madrid · Ref. 128895064\n\n▪️ Celador/a Quirófano - Centro Médico Quirúrgico Olympia\n📍 Madrid · Ref. 128873253\n\n✍️ Inscríbete gratis en el portal oficial: empleo.quironsalud.es (busca la oferta por su nº de referencia)\n\nFuente: portal de empleo de Quirónsalud, Torre Caleido.\n\n#empleo #trabajo #ofertasdeempleo #ofertadeempleo #buscotrabajo #buscoempleo #bolsadeempleo #trabajoenespaña #madrid #empleomadrid #trabajomadrid #trabajoenmadrid #madridempleo #sanidad #empleosanitario #enfermeria #enfermera #enfermero #tcae #auxiliardeenfermeria #medicina #medico #fisioterapia #farmacia #oposicionessanidad #hospital #salud #celador #quirofano #urgencias"
 }
