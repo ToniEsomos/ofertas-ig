@@ -1,5 +1,50 @@
 [
   {
+    "id": "129271560",
+    "titulo": "Auxiliar de Enfermería Paritorio - Hospital Universitario Quirónsalud Pozuelo (temporal, turno tarde)",
+    "empresa": "Quirónsalud",
+    "localidad": "Pozuelo de Alarcón",
+    "provincia": "Madrid",
+    "fecha": "2026-10-07",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129271560/4590"
+  },
+  {
+    "id": "129269701",
+    "titulo": "Auxiliar Administrativo/a Atención al Paciente - Hospital Universitario Ruber Juan Bravo",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-07",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129269701/4590"
+  },
+  {
+    "id": "129267108",
+    "titulo": "Atención al paciente - Centro Médico Quirúrgico Olympia (Con Inglés)",
+    "empresa": "Torre Caleido",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-07",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129267108/4590"
+  },
+  {
+    "id": "128501417",
+    "titulo": "Aux. Administrativo/a Radiodiagnóstico - Hospital Ruber Internacional - Madrid",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-06",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128501417/4590"
+  },
+  {
+    "id": "129243789",
+    "titulo": "Enfermero/a Quirófano - Hospital Universitario Quirónsalud Pozuelo",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-06",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129243789/4590"
+  },
+  {
     "id": "129236865",
     "titulo": "Coordinador/a Consultas Externas - Centro Médico quirúrgico Olympia",
     "empresa": "Torre Caleido",
@@ -7,6 +52,33 @@
     "provincia": "",
     "fecha": "2026-10-06",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129236865/4590"
+  },
+  {
+    "id": "129241062",
+    "titulo": "Prácticas Calidad",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-06",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129241062/4590"
+  },
+  {
+    "id": "129243393",
+    "titulo": "Auxiliar de Enfermeria Consultas Externas (temporal) - Hospital Universitario Ruber Juan Bravo",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-06",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129243393/4590"
+  },
+  {
+    "id": "126619828",
+    "titulo": "Técnico/a nóminas con SAP - Oficinas Corporativas Quirónsalud - Madrid",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-06",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/126619828/4590"
   },
   {
     "id": "129233951",
@@ -127,7 +199,7 @@
   },
   {
     "id": "129102570",
-    "titulo": "Especialista en Medicina Interna vía MIR (Proyecto Hospital Digital)",
+    "titulo": "Especialista en Medicina Interna/Familia (Proyecto Hospital Digital).",
     "empresa": "Quirónsalud",
     "localidad": "Madrid",
     "provincia": "",
@@ -432,15 +504,6 @@
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128774408/4590"
   },
   {
-    "id": "128773006",
-    "titulo": "Auxiliar de Enfermería Consultas Externas Traumatologia - Hospital Universitario Quirónsalud Pozuelo",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-09-21",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128773006/4590"
-  },
-  {
     "id": "128772865",
     "titulo": "Mozo/a de Almacén - Hospital Universitario Quirónsalud Madrid",
     "empresa": "Quirónsalud",
@@ -540,15 +603,6 @@
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128602843/4590"
   },
   {
-    "id": "128553399",
-    "titulo": "Auxiliar de Enfermería Quirófano - Hospital Universitario Ruber Juan Bravo",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-09-14",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128553399/4590"
-  },
-  {
     "id": "125350777",
     "titulo": "Técnico/a de Compras de Laboratorio - Oficinas Corporativas Quirónsalud Madrid",
     "empresa": "Quirónsalud",
@@ -583,33 +637,6 @@
     "provincia": "",
     "fecha": "2026-09-10",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128479908/4590"
-  },
-  {
-    "id": "128477257",
-    "titulo": "Técnico/a de Regulatory Affairs Fase Oncología - Hospital Universitario Quirónsalud Pozuelo",
-    "empresa": "Quirónsalud",
-    "localidad": "Pozuelo de Alarcón",
-    "provincia": "Madrid",
-    "fecha": "2026-09-10",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128477257/4590"
-  },
-  {
-    "id": "128466416",
-    "titulo": "Monitor Laiason - Hospital Universitario Quirónsalud Pozuelo",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-09-10",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128466416/4590"
-  },
-  {
-    "id": "128198876",
-    "titulo": "Técnico/as de Laboratorio (TEL) - H. U. Quirónsalud Pozuelo de Alarcón - Madrid",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-09-08",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128198876/4590"
   },
   {
     "id": "128373415",
@@ -727,15 +754,6 @@
     "provincia": "Madrid",
     "fecha": "2026-08-27",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128065737/4590"
-  },
-  {
-    "id": "128043763",
-    "titulo": "Prácticas Contabilidad (Control de Gestión)",
-    "empresa": "Quirónsalud",
-    "localidad": "Alcobendas",
-    "provincia": "Madrid",
-    "fecha": "2026-08-26",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128043763/4590"
   },
   {
     "id": "128008073",
