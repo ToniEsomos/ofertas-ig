@@ -1,5 +1,104 @@
 [
   {
+    "id": "129536584",
+    "titulo": "Coordinador/a Esterilización - Hospital Universitario La Luz",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-16",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129536584/4590"
+  },
+  {
+    "id": "129533940",
+    "titulo": "Responsable de Administración de Personal, Datos y Reporting - Quirónsalud Madrid Privados",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-16",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129533940/4590"
+  },
+  {
+    "id": "129533167",
+    "titulo": "Coordinador/a Administrativo/a de Diagnóstico por la Imagen (DXI) - Hospital Quirónsalud Pozuelo",
+    "empresa": "Quirónsalud",
+    "localidad": "Pozuelo de Alarcón",
+    "provincia": "Madrid",
+    "fecha": "2026-10-16",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129533167/4590"
+  },
+  {
+    "id": "129532457",
+    "titulo": "Médico/a Especialista en Medicina Interna - Hospital Universitario Quirónsalud Pozuelo",
+    "empresa": "Quirónsalud",
+    "localidad": "Pozuelo de Alarcón",
+    "provincia": "Madrid",
+    "fecha": "2026-10-16",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129532457/4590"
+  },
+  {
+    "id": "129241062",
+    "titulo": "Prácticas Calidad (Servicios Generales)",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-16",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129241062/4590"
+  },
+  {
+    "id": "129511804",
+    "titulo": "Enfermero/a Hospitalización - Hospital Universitario Ruber Juan Bravo",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-15",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129511804/4590"
+  },
+  {
+    "id": "129511559",
+    "titulo": "Enfermero/a Hospitalización - Hospital Universitario Quirónsalud La Luz",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-15",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129511559/4590"
+  },
+  {
+    "id": "129510463",
+    "titulo": "Enfermero/a Quirófano - Hospital Quirónsalud San José",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-15",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129510463/4590"
+  },
+  {
+    "id": "121093311",
+    "titulo": "Técnico/a Planificación y Force (turno Tarde) en el Centro de Operaciones del Paciente",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-15",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/121093311/4590"
+  },
+  {
+    "id": "125284236",
+    "titulo": "Agente Centro de Operaciones del Paciente - Alemán o Euskera",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-15",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/125284236/4590"
+  },
+  {
+    "id": "121091381",
+    "titulo": "Técnico/a Monitorización en tiempo real (Turno tarde + dos fines de semana)",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-15",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/121091381/4590"
+  },
+  {
     "id": "129501263",
     "titulo": "Facultativo/a especialista bioquímica clínica o análisis clínicos - H. U. I. Leonor - Madrid",
     "empresa": "Quirónsalud",
@@ -7,15 +106,6 @@
     "provincia": "Madrid",
     "fecha": "2026-10-15",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129501263/4590"
-  },
-  {
-    "id": "129499519",
-    "titulo": "Técnico/as de Laboratorio (TEL) - Hospital U. Infanta Leonor, Vallecas - Madrid",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-10-15",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129499519/4590"
   },
   {
     "id": "129476494",
@@ -43,15 +133,6 @@
     "provincia": "Madrid",
     "fecha": "2026-10-14",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129468034/4590"
-  },
-  {
-    "id": "129468325",
-    "titulo": "Técnico/as de Laboratorio (TEL) - Hospitales U. Infanta Sofía, San Sebastián de los Reyes - Madrid",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-10-14",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129468325/4590"
   },
   {
     "id": "129457778",
@@ -279,15 +360,6 @@
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129138105/4590"
   },
   {
-    "id": "125284236",
-    "titulo": "Agente Centro de Operaciones del Paciente - Alemán o Euskera",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-10-02",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/125284236/4590"
-  },
-  {
     "id": "129137626",
     "titulo": "Enfermero/a Consultas Externas - Centro Médico Quirúrgico Olympia",
     "empresa": "Torre Caleido",
@@ -295,15 +367,6 @@
     "provincia": "Madrid",
     "fecha": "2026-10-02",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129137626/4590"
-  },
-  {
-    "id": "129127230",
-    "titulo": "Administrativo/a Facturación Sanitaria - Pozuelo de Alarcón (Madrid)",
-    "empresa": "Quirónsalud",
-    "localidad": "Pozuelo de Alarcón",
-    "provincia": "Madrid",
-    "fecha": "2026-10-02",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129127230/4590"
   },
   {
     "id": "129110466",
@@ -540,15 +603,6 @@
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128868417/4590"
   },
   {
-    "id": "128832679",
-    "titulo": "Enfermero/a Hospitalización - Hospital Universitario Quirónsalud La Luz",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-09-22",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128832679/4590"
-  },
-  {
     "id": "126550477",
     "titulo": "Responsable de Limpieza - Hospital Universitario Infanta Elena (Valdemoro)",
     "empresa": "Quirónsalud",
@@ -594,15 +648,6 @@
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128720668/4590"
   },
   {
-    "id": "128719491",
-    "titulo": "Enfermero/a Hospitalización - Hospital Universitario Ruber Juan Bravo",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-09-18",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128719491/4590"
-  },
-  {
     "id": "128714052",
     "titulo": "Médico/a de Urgencias - Hospital Universitario Ruber Juan Bravo",
     "empresa": "Quirónsalud",
@@ -619,15 +664,6 @@
     "provincia": "Madrid",
     "fecha": "2026-09-17",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128688975/4590"
-  },
-  {
-    "id": "128648890",
-    "titulo": "Enfermero/a Quirófano - Hospital Quirónsalud San José",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-09-16",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128648890/4590"
   },
   {
     "id": "128634381",
@@ -700,15 +736,6 @@
     "provincia": "Madrid",
     "fecha": "2026-09-07",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128373415/4590"
-  },
-  {
-    "id": "121093311",
-    "titulo": "Técnico/a Planificación y Force (turno Tarde) en el Centro de Operaciones del Paciente",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-09-07",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/121093311/4590"
   },
   {
     "id": "128297172",
