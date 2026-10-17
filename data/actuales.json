@@ -1,5 +1,32 @@
 [
   {
+    "id": "129539472",
+    "titulo": "Enfermero/a Urgencias - Hospital Quirónsalud Sur",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-16",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129539472/4590"
+  },
+  {
+    "id": "129538955",
+    "titulo": "En los hospitales privados de Quirónsalud en Madrid buscamos profesionales de enfermería con vocación, talento y ganas de crecer",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-16",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129538955/4590"
+  },
+  {
+    "id": "128872781",
+    "titulo": "Técnico/a Especialista Radiodiagnóstico Ecografías - Hospital Universitario Quirónsalud Pozuelo",
+    "empresa": "Quirónsalud",
+    "localidad": "Pozuelo de Alarcón",
+    "provincia": "Madrid",
+    "fecha": "2026-10-16",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128872781/4590"
+  },
+  {
     "id": "129536584",
     "titulo": "Coordinador/a Esterilización - Hospital Universitario La Luz",
     "empresa": "Quirónsalud",
@@ -16,15 +43,6 @@
     "provincia": "Madrid",
     "fecha": "2026-10-16",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129533940/4590"
-  },
-  {
-    "id": "129533167",
-    "titulo": "Coordinador/a Administrativo/a de Diagnóstico por la Imagen (DXI) - Hospital Quirónsalud Pozuelo",
-    "empresa": "Quirónsalud",
-    "localidad": "Pozuelo de Alarcón",
-    "provincia": "Madrid",
-    "fecha": "2026-10-16",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129533167/4590"
   },
   {
     "id": "129532457",
@@ -187,15 +205,6 @@
     "provincia": "Madrid",
     "fecha": "2026-10-09",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129351933/4590"
-  },
-  {
-    "id": "129351735",
-    "titulo": "En los hospitales privados de Quirónsalud en Madrid buscamos profesionales de enfermería con vocación, talento y ganas de crecer",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-10-09",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129351735/4590"
   },
   {
     "id": "129351120",
@@ -585,15 +594,6 @@
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128895064/4590"
   },
   {
-    "id": "128872781",
-    "titulo": "Técnico/a Especialista Radiodiagnóstico Ecografías - Hospital Universitario Quirónsalud Pozuelo",
-    "empresa": "Quirónsalud",
-    "localidad": "Pozuelo de Alarcón",
-    "provincia": "Madrid",
-    "fecha": "2026-09-23",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128872781/4590"
-  },
-  {
     "id": "128868417",
     "titulo": "Study Coordinator Neumología- Hospital Universitario Quirónsalud Pozuelo",
     "empresa": "Quirónsalud",
@@ -685,7 +685,7 @@
   },
   {
     "id": "128602843",
-    "titulo": "Administrativo/a Sanitario/a de Cirugía Ambulatoria y Diagnóstico por Imagen - Centro Médico Quirúrgico",
+    "titulo": "Administrativo/a Admisión Diagnóstico por la Imagen - Centro Médico Quirúrgico Olympìa",
     "empresa": "Torre Caleido",
     "localidad": "Madrid",
     "provincia": "Madrid",
