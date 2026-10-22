@@ -2278,5 +2278,65 @@
     "estado": "publicada",
     "cuando": "2026-10-21T12:01:04",
     "post": "17956076994256375"
+  },
+  "129689839": {
+    "id": "129689839",
+    "titulo": "Enfermero/a Consultas Externas - Centro Médico Quirúrgico Olympia",
+    "empresa": "Torre Caleido",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-21",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129689839/4590",
+    "estado": "publicada",
+    "cuando": "2026-10-22T12:04:08",
+    "post": "18152288848470354"
+  },
+  "129688016": {
+    "id": "129688016",
+    "titulo": "Auxiliar Enfermería Consultas Externas - Centro Médico-Quirúrgico Olympia (Pozuelo)",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-21",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129688016/4590",
+    "estado": "publicada",
+    "cuando": "2026-10-22T12:04:08",
+    "post": "18152288848470354"
+  },
+  "129687703": {
+    "id": "129687703",
+    "titulo": "TEL, Téc. Laboratorio - Hospitales Quirónsalud Sur, Madrid",
+    "empresa": "Quirónsalud",
+    "localidad": "Alcorcón",
+    "provincia": "Madrid",
+    "fecha": "2026-10-21",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129687703/4590",
+    "estado": "publicada",
+    "cuando": "2026-10-22T12:04:08",
+    "post": "18152288848470354"
+  },
+  "129686942": {
+    "id": "129686942",
+    "titulo": "Técnico/as de Laboratorio (TEL) - Hospital U. Infanta Leonor, Vallecas - Madrid",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-21",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129686942/4590",
+    "estado": "publicada",
+    "cuando": "2026-10-22T12:04:08",
+    "post": "18152288848470354"
+  },
+  "129683821": {
+    "id": "129683821",
+    "titulo": "Técnico en Administración y Documentación Sanitaria (Medical Record Clerk) - Hospital Universitario Quironsalud Pozuelo",
+    "empresa": "Quirónsalud",
+    "localidad": "Pozuelo de Alarcón",
+    "provincia": "Madrid",
+    "fecha": "2026-10-21",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129683821/4590",
+    "estado": "publicada",
+    "cuando": "2026-10-22T12:04:08",
+    "post": "18152288848470354"
   }
 }
