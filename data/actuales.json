@@ -1,5 +1,32 @@
 [
   {
+    "id": "129873743",
+    "titulo": "Key User (Aturnos)",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "",
+    "fecha": "2026-10-28",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129873743/4590"
+  },
+  {
+    "id": "127432733",
+    "titulo": "Facultativo/a especialista bioquímica clínica o análisis clínicos/Cromatografía - Lab. Caoba (Alcobendas)",
+    "empresa": "Quirónsalud",
+    "localidad": "Alcobendas",
+    "provincia": "Madrid",
+    "fecha": "2026-10-27",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/127432733/4590"
+  },
+  {
+    "id": "129843170",
+    "titulo": "Técnico/a nóminas con SAP - Oficinas Corporativas Quirónsalud - Madrid",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-27",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129843170/4590"
+  },
+  {
     "id": "129838838",
     "titulo": "Técnico/a de mantenimiento - Hospital Quirónsalud Sur - Alcorcón (Madrid)",
     "empresa": "Quirónsalud",
@@ -333,24 +360,6 @@
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129432391/4590"
   },
   {
-    "id": "129428719",
-    "titulo": "Project Manager - Dirección Médica",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-10-13",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129428719/4590"
-  },
-  {
-    "id": "129344135",
-    "titulo": "Farmacéutico/a Hospitalario/a - Hospital Universitario Ruber Juan Bravo",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-10-09",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129344135/4590"
-  },
-  {
     "id": "129343106",
     "titulo": "TEL Citogenética. Laboratorios Caoba, Alcobendas - Madrid.",
     "empresa": "Quirónsalud",
@@ -378,15 +387,6 @@
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129317964/4590"
   },
   {
-    "id": "129269701",
-    "titulo": "Auxiliar Administrativo/a Atención al Paciente - Hospital Universitario Ruber Juan Bravo",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-10-07",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129269701/4590"
-  },
-  {
     "id": "129267108",
     "titulo": "Atención al paciente - Centro Médico Quirúrgico Olympia (Con Inglés)",
     "empresa": "Torre Caleido",
@@ -412,15 +412,6 @@
     "provincia": "",
     "fecha": "2026-10-06",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129236865/4590"
-  },
-  {
-    "id": "129243393",
-    "titulo": "Auxiliar de Enfermeria Consultas Externas (temporal) - Hospital Universitario Ruber Juan Bravo",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-10-06",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129243393/4590"
   },
   {
     "id": "129233951",
@@ -493,15 +484,6 @@
     "provincia": "Madrid",
     "fecha": "2026-10-01",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129095111/4590"
-  },
-  {
-    "id": "121558620",
-    "titulo": "Coordinador/a Enfermería - Turno de Noches - H. U. Quirónsalud Sur (Alcorcón)",
-    "empresa": "Quirónsalud",
-    "localidad": "Alcorcón",
-    "provincia": "Madrid",
-    "fecha": "2026-09-30",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/121558620/4590"
   },
   {
     "id": "129033171",
@@ -630,15 +612,6 @@
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128920553/4590"
   },
   {
-    "id": "128899384",
-    "titulo": "Fisioterapeuta (turno de tarde) - Hospital Quirónsalud Sur",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-09-24",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128899384/4590"
-  },
-  {
     "id": "128895064",
     "titulo": "Consultor/a de Estrategia y Operaciones (Corporativo)",
     "empresa": "Quirónsalud",
@@ -646,15 +619,6 @@
     "provincia": "",
     "fecha": "2026-09-24",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128895064/4590"
-  },
-  {
-    "id": "128868417",
-    "titulo": "Study Coordinator Neumología- Hospital Universitario Quirónsalud Pozuelo",
-    "empresa": "Quirónsalud",
-    "localidad": "Pozuelo de Alarcón",
-    "provincia": "Madrid",
-    "fecha": "2026-09-23",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128868417/4590"
   },
   {
     "id": "128774408",
@@ -691,15 +655,6 @@
     "provincia": "Madrid",
     "fecha": "2026-09-18",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128714052/4590"
-  },
-  {
-    "id": "128688975",
-    "titulo": "Auxiliar de Enfermería Consultas Externas - Hospital Universitario Quirónsalud Pozuelo",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-09-17",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128688975/4590"
   },
   {
     "id": "125441740",
@@ -765,15 +720,6 @@
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128295562/4590"
   },
   {
-    "id": "128236706",
-    "titulo": "Oficial de mantenimiento - H. U. General de Villalba - Madrid",
-    "empresa": "Quirónsalud",
-    "localidad": "Collado Villalba",
-    "provincia": "Madrid",
-    "fecha": "2026-09-02",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128236706/4590"
-  },
-  {
     "id": "128236489",
     "titulo": "Oficial de mantenimiento - H. U. Rey Juan Carlos - Madrid",
     "empresa": "Quirónsalud",
@@ -799,15 +745,6 @@
     "provincia": "",
     "fecha": "2026-08-27",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/125850403/4590"
-  },
-  {
-    "id": "128065947",
-    "titulo": "Auxiliar de Enfermería Esterilización - Hospital Universitario Quirónsalud Pozuelo",
-    "empresa": "Quirónsalud",
-    "localidad": "Pozuelo de Alarcón",
-    "provincia": "Madrid",
-    "fecha": "2026-08-27",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128065947/4590"
   },
   {
     "id": "128008073",
@@ -864,15 +801,6 @@
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/127830370/4590"
   },
   {
-    "id": "125385961",
-    "titulo": "Auxiliar de Servicios - Hospital Quirónsalud Madrid (Pozuelo de Alarcón)",
-    "empresa": "Quirónsalud",
-    "localidad": "Pozuelo de Alarcón",
-    "provincia": "Madrid",
-    "fecha": "2026-08-13",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/125385961/4590"
-  },
-  {
     "id": "127645314",
     "titulo": "Controller de Gestión - Laboratorio Central Health Diagnostics Quirónsalud (Alcobendas)",
     "empresa": "Quirónsalud",
@@ -898,15 +826,6 @@
     "provincia": "Madrid",
     "fecha": "2026-08-03",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/127542519/4590"
-  },
-  {
-    "id": "127469487",
-    "titulo": "Enfermero/a Hospitalización Materno Infantil, Neonatos y Urgencias Ginecológicas H. Infanta Elena (Valdemoro)",
-    "empresa": "Quirónsalud",
-    "localidad": "Valdemoro",
-    "provincia": "Madrid",
-    "fecha": "2026-07-30",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/127469487/4590"
   },
   {
     "id": "121608222",
