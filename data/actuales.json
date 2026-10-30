@@ -1,5 +1,95 @@
 [
   {
+    "id": "129611501",
+    "titulo": "Médico/a Especialista en Neumología – Hospital Universitario Quirónsalud Pozuelo",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-30",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129611501/4590"
+  },
+  {
+    "id": "129026861",
+    "titulo": "Ginecólogos/as – Hospital Universitario Quirónsalud Pozuelo",
+    "empresa": "Quirónsalud",
+    "localidad": "Pozuelo de Alarcón",
+    "provincia": "Madrid",
+    "fecha": "2026-10-30",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129026861/4590"
+  },
+  {
+    "id": "129939888",
+    "titulo": "Téc. de radiodiagnóstico - Esp. resonancia magnética",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-30",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129939888/4590"
+  },
+  {
+    "id": "129938768",
+    "titulo": "Enfermero/a Urgencias - Hospital Quirónsalud Sur",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-30",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129938768/4590"
+  },
+  {
+    "id": "129938616",
+    "titulo": "Desarrolla tu talento como Enfermero/a en la red hospitalaria Quirónsalud Madrid",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-30",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129938616/4590"
+  },
+  {
+    "id": "129937712",
+    "titulo": "Enfermero/a Quirófano - Hospital Quirónsalud San José",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-30",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129937712/4590"
+  },
+  {
+    "id": "129605344",
+    "titulo": "Médico/a Especialista en Medicina Interna - Hospital Universitario La Luz",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "",
+    "fecha": "2026-10-30",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129605344/4590"
+  },
+  {
+    "id": "129934332",
+    "titulo": "Administrativo/a recepción - Hospitales Quirónsalud, Madrid",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-30",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129934332/4590"
+  },
+  {
+    "id": "129457010",
+    "titulo": "Gestor/a de Proyectos Sanitarios - Hospital Universitario La Luz",
+    "empresa": "Quirónsalud",
+    "localidad": "Madrid",
+    "provincia": "Madrid",
+    "fecha": "2026-10-30",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129457010/4590"
+  },
+  {
+    "id": "129914969",
+    "titulo": "Auxiliar Enfermería UCI - Hospital Quirónsalud Valle del Henares",
+    "empresa": "Quirónsalud",
+    "localidad": "Torrejón de Ardoz",
+    "provincia": "Madrid",
+    "fecha": "2026-10-29",
+    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129914969/4590"
+  },
+  {
     "id": "129913992",
     "titulo": "Coordinador/a de Bloque Quirúrgico - Hospital Universitario La Luz",
     "empresa": "Quirónsalud",
@@ -46,21 +136,12 @@
   },
   {
     "id": "129811458",
-    "titulo": "Coodinador/a Consultas Externas- Hospital Universitario Quirónsalud La Luz",
+    "titulo": "Coodinador/a Consultas Externas- Hospital Universitario La Luz",
     "empresa": "Quirónsalud",
     "localidad": "Madrid",
     "provincia": "",
     "fecha": "2026-10-26",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129811458/4590"
-  },
-  {
-    "id": "129747336",
-    "titulo": "En los hospitales privados de Quirónsalud en Madrid buscamos profesionales de enfermería con vocación, talento y ganas de crecer",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-10-23",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129747336/4590"
   },
   {
     "id": "129741616",
@@ -153,31 +234,13 @@
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129638221/4590"
   },
   {
-    "id": "129611501",
-    "titulo": "Médico/a Especialista en Neumología – Hospital Universitario Quirónsalud Pozuelo",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-10-19",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129611501/4590"
-  },
-  {
     "id": "129606835",
-    "titulo": "Médico/a especialista en Digestivo - Hospital Universitario Quirónsalud La Luz",
+    "titulo": "Médico/a especialista en Digestivo - Hospital Universitario La Luz",
     "empresa": "Quirónsalud",
     "localidad": "Madrid",
     "provincia": "",
     "fecha": "2026-10-19",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129606835/4590"
-  },
-  {
-    "id": "129605344",
-    "titulo": "Médico/a Especialista en Medicina Interna - Hospital Universitario Quirónsalud La Luz",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "",
-    "fecha": "2026-10-19",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129605344/4590"
   },
   {
     "id": "129596497",
@@ -187,24 +250,6 @@
     "provincia": "Madrid",
     "fecha": "2026-10-19",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129596497/4590"
-  },
-  {
-    "id": "129539472",
-    "titulo": "Enfermero/a Urgencias - Hospital Quirónsalud Sur",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-10-16",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129539472/4590"
-  },
-  {
-    "id": "128872781",
-    "titulo": "Técnico/a Especialista Radiodiagnóstico Ecografías - Hospital Universitario Quirónsalud Pozuelo",
-    "empresa": "Quirónsalud",
-    "localidad": "Pozuelo de Alarcón",
-    "provincia": "Madrid",
-    "fecha": "2026-10-16",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128872781/4590"
   },
   {
     "id": "129536584",
@@ -259,15 +304,6 @@
     "provincia": "Madrid",
     "fecha": "2026-10-15",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129511559/4590"
-  },
-  {
-    "id": "129510463",
-    "titulo": "Enfermero/a Quirófano - Hospital Quirónsalud San José",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-10-15",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129510463/4590"
   },
   {
     "id": "121093311",
@@ -423,15 +459,6 @@
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129171943/4590"
   },
   {
-    "id": "129170538",
-    "titulo": "Téc. Auxiliar de Farmacia Hospital General de Villalba",
-    "empresa": "Quirónsalud",
-    "localidad": "Collado Villalba",
-    "provincia": "Madrid",
-    "fecha": "2026-10-04",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129170538/4590"
-  },
-  {
     "id": "129110466",
     "titulo": "Documentalista sanitario - Laboratorios Caoba - Alcobendas (Madrid)",
     "empresa": "Quirónsalud",
@@ -439,15 +466,6 @@
     "provincia": "Madrid",
     "fecha": "2026-10-01",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129110466/4590"
-  },
-  {
-    "id": "129102570",
-    "titulo": "Especialista en Medicina Interna/Familia (Proyecto Hospital Digital).",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "",
-    "fecha": "2026-10-01",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129102570/4590"
   },
   {
     "id": "129095226",
@@ -484,15 +502,6 @@
     "provincia": "Madrid",
     "fecha": "2026-09-29",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129030835/4590"
-  },
-  {
-    "id": "129026861",
-    "titulo": "Ginecólogos/as – Hospital Universitario Quirónsalud Pozuelo",
-    "empresa": "Quirónsalud",
-    "localidad": "Pozuelo de Alarcón",
-    "provincia": "Madrid",
-    "fecha": "2026-09-29",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/129026861/4590"
   },
   {
     "id": "129021779",
@@ -556,15 +565,6 @@
     "provincia": "Madrid",
     "fecha": "2026-09-28",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128980539/4590"
-  },
-  {
-    "id": "128977849",
-    "titulo": "Técnico Superior Prevención Riesgos Laborales Hospital Infanta Elena (Valdemoro)",
-    "empresa": "Quirónsalud",
-    "localidad": "Valdemoro",
-    "provincia": "Madrid",
-    "fecha": "2026-09-28",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128977849/4590"
   },
   {
     "id": "128926956",
@@ -684,15 +684,6 @@
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128479908/4590"
   },
   {
-    "id": "128373415",
-    "titulo": "Enfermero/a Endoscopias - Hospital Universitario Quirónsalud Pozuelo",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-09-07",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128373415/4590"
-  },
-  {
     "id": "128295562",
     "titulo": "Facultativo especialista en Angiología y Cirugía Vascular (Hospital Universitario Rey Juan Carlos de Móstoles)",
     "empresa": "Quirónsalud",
@@ -727,15 +718,6 @@
     "provincia": "",
     "fecha": "2026-08-27",
     "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/125850403/4590"
-  },
-  {
-    "id": "128008073",
-    "titulo": "Enfermero/a Hospitalización - Hospital Quirónsalud Valle del Henares",
-    "empresa": "Quirónsalud",
-    "localidad": "Madrid",
-    "provincia": "Madrid",
-    "fecha": "2026-08-25",
-    "url": "https://empleo-grupoquironsalud.talentclue.com/es/node/128008073/4590"
   },
   {
     "id": "127906312",
